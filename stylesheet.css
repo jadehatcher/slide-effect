@@ -1,0 +1,76 @@
+
+
+.skranji-regular {
+  font-family: "Skranji", system-ui;
+  font-weight: 400;
+  font-style: normal;}
+
+
+  .skranji-bold {
+  font-family: "Skranji", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+    background-color: #780000;
+    font-family: "Skranji", system-ui;
+}
+
+h1{
+    font-family: "Skranji", system-ui;
+    font-weight:700;
+    color: #f1e6d2;
+    text-align: center;
+}
+
+.card img{
+    position:absolute;
+    top: 0px;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit:cover;
+}
+
+.container{
+    display: flex;
+}
+
+.card {
+    height: 500px;
+    margin-left: 10px;
+    border-radius:20px;
+    background-color: #f1e6d2;
+    position: relative;
+    flex:1;
+    transition: .3s all ease;
+}
+
+.card:hover{
+    flex:2;
+    background-color: #d8d2c6;
+}
+
+.front-page{
+    position: relative;
+    top: 40%;
+    text-align: center;
+    opacity: 1;
+}
+
+.back-page {
+    opacity:0;
+}
+
+.card:hover .front-page{
+    opacity:0;
+    transition: .3s all ease;
+}
+
+.card:hover .back-page{
+    opacity:1;
+    transition: .3s all ease;
+}
+
